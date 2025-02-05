@@ -1131,9 +1131,10 @@
                                 <div class="col">
                                     <div class="form-group ">
                                         <label>STAFF REGION:</label>
-                                        <select name="StaffRegion" id="subject" placeholder="Staff Region" value="" class="form-control" required>
+                                        <input type="text" name="StaffRegion"   placeholder="Staff Region" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffRegion" id="subject" placeholder="Staff Region" value="" class="form-control" required>
                                             <option value="" selected="" disabled="" >Staff Region</option>
-                                        </select>
+                                        </select> -->
                                        
                                     </div>
                                 </div>
@@ -1141,9 +1142,10 @@
                                 <div class="col">
                                     <div class="form-group ">
                                         <label>STAFF CITY:</label>
-                                        <select name="StaffCity" id="topic" placeholder="Staff Region" value="" class="form-control" required>
+                                        <input type="text" name="StaffCity"   placeholder="Staff City" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffCity" id="topic" placeholder="Staff Region" value="" class="form-control" required>
                                             <option value="" selected="" disabled="" >Staff City</option>
-                                        </select>
+                                        </select> -->
                                         
                                     </div>
                                 </div>
@@ -1151,9 +1153,10 @@
                                 <div class="col">
                                     <div class="form-group ">
                                         <label>STAFF DISTRICT:</label>
-                                        <select name="StaffDistrict" id="chapter" placeholder="Staff chapter" value="" class="form-control" required>
+                                        <input type="text" name="StaffDistrict"   placeholder="Staff District" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffDistrict" id="chapter" placeholder="Staff chapter" value="" class="form-control" required>
                                             <option value="" selected="" disabled="" >Staff District</option>
-                                        </select>
+                                        </select> -->
                                         
                                     </div>
                                 </div>  
@@ -1161,7 +1164,7 @@
                           </div>
 
 
-                          
+
                                   <div class="row">
 
                                     <div class="col">
