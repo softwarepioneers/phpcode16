@@ -1302,6 +1302,236 @@
                                    
                                  
                                   </div>
+
+
+                                  <div class="row">
+                                   
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF NAME:</label>
+                                            <input type="text" name="StaffName"   placeholder="Staff Name" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        </div>
+                                    </div>
+
+                                  
+
+                                
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF NATIONALITY:</label>
+                                            <input type="text" name="StaffNationality"   placeholder="Staff Nationality" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF TYPE:</label>
+                                            <!-- <input type="text" name="StaffType"   placeholder="Staff Type" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required > -->
+                                            <select name="StaffType" placeholder="Staff Type" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Type</option>
+                                                <option value="Man">Man</option>
+                                                <option value="Woman">Woman</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!--  
+                                        <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF MONTH:</label>
+                                            <input id="month" type="month" name="StaffMonth" placeholder="Staff Month" value="" class="form-control"  required >
+                                           
+                                           <input type="month" name="StaffMonth"  placeholder="Staff Month" value="" class="form-control"  required >
+                                           
+                                            <select name="StaffMonth" placeholder="Staff Month" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Month</option>
+                                                <option value="January">January</option>
+                                                <option value="February">February</option>
+                                                <option value="March">March</option>
+                                                <option value="April">April</option>
+                                                <option value="May ">May</option>
+                                                <option value="June">June</option>
+                                                <option value="July">July</option>
+                                                <option value="August">August</option>
+                                                <option value="September">September</option>
+                                                <option value="October">October</option>
+                                                <option value="November">November</option>
+                                                <option value="December">December</option>
+                                            </select> 
+                                           
+                                        </div>
+                                    </div>
+
+                                -->
+ 
+                                    <!-- <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF ATTENDANCE TIME:</label>
+                                            <input type="text" name="StaffAttendanceTime" placeholder="Staff Attendance Time" value="" class="form-control" onblur="(this.type='text')"  onfocus="(this.type='time')" required>
+                                        </div>
+                                    </div> -->
+
+                                  </div>
+
+                                  <div class="row">
+
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF DEPARTMENT:</label>
+                                            <!-- <input type="text" name="StaffDepartment"   placeholder="Staff Department" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required > -->
+                                            <!-- <select name="StaffDepartment" id="Department" placeholder="Staff Department" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Department</option>
+                                            </select> -->
+                                           
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF SECTION:</label>
+                                            <input type="text" name="StaffSection"   placeholder="Staff Section" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <!-- <select name="StaffSection" id="Section" placeholder="Staff Section" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Section</option>
+                                            </select> -->
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF JOB:</label>
+                                            <input type="text" name="StaffJob"   placeholder="Staff Job" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                            <!-- <select name="StaffJob" id="Job" placeholder="Staff Job" value="" class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Job</option>
+                                            </select> -->
+                                            
+                                        </div>
+                                    </div>  
+
+                              </div>
+
+
+
+                              <div class="row">
+
+                                   
+                                <div class="col">
+                                    <div class="form-group ">
+                                        <label>STAFF REGION:</label>
+                                        <input type="text" name="StaffRegion"   placeholder="Staff Region" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffRegion" id="subject" placeholder="Staff Region" value="" class="form-control" required>
+                                            <option value="" selected="" disabled="" >Staff Region</option>
+                                        </select> -->
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group ">
+                                        <label>STAFF CITY:</label>
+                                        <input type="text" name="StaffCity"   placeholder="Staff City" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffCity" id="topic" placeholder="Staff Region" value="" class="form-control" required>
+                                            <option value="" selected="" disabled="" >Staff City</option>
+                                        </select> -->
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group ">
+                                        <label>STAFF DISTRICT:</label>
+                                        <input type="text" name="StaffDistrict"   placeholder="Staff District" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
+                                        <!-- <select name="StaffDistrict" id="chapter" placeholder="Staff chapter" value="" class="form-control" required>
+                                            <option value="" selected="" disabled="" >Staff District</option>
+                                        </select> -->
+                                        
+                                    </div>
+                                </div>  
+
+                          </div>
+
+
+
+                                  <div class="row">
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF ATTENDANCE DATE:</label>
+                                            <input  type="text"  name="StaffAttendanceDate" placeholder="Staff Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF ATTENDANCE STATUS:</label>
+                                            <select name="StaffAttendanceStatus" placeholder="Staff Attendance Status" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Attendance Status</option>
+                                                <option value="Present">Present</option>
+                                                <option value="Absent">Absent</option>
+                                            </select>
+                                        </div> 
+                                    </div>
+
+                                    
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF ATTENDANCE REMARK:</label>
+                                            <select name="StaffAttendanceRemark" placeholder="Staff Attendance Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Attendance Remark</option>
+                                                <option value="Normal">Normal</option>
+                                                <option value="Emergency">Emergency</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                   
+                                  </div>
+
+                                  <!-- <div class="row">
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF DEPARTMENT:</label>
+                                            <select name="StaffDepartment" placeholder="Staff Department" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Department</option>
+                                                <option value="Teachers Department">Teachers Department</option>
+                                                <option value="Employees Department">Employees Department</option>
+                                                <option value="Laborers Department">Laborers Department</option>
+                                                <option value="Drivers Department">Drivers Department</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF SECTION:</label>
+                                            <select name="StaffSection" placeholder="Staff Section" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Staff Section</option>
+                                                <option value="Teachers Section">Teachers Section</option>
+                                                <option value="Employees Section">Employees Section</option>
+                                                <option value="Laborers Section">Laborers Section</option>
+                                                <option value="Drivers Section">Drivers Section</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STAFF JOB:</label>
+                                            <select name="StaffJob" data-placeholder="Staff Job" value=""  class="anyname form-control" required>
+                                                 <select data-placeholder="First Period" class="anyname form-control">
+                                                <option value="" selected="" disabled="" >Staff Job</option>
+                                                <option value="Teachers ">Teachers </option>
+                                                <option value="Employees ">Employees </option>
+                                                <option value="Laborers ">Laborers </option>
+                                                <option value="Drivers ">Drivers </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                   
+                                  </div> -->
+
+                            
                             
                                    
                               
