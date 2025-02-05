@@ -2123,7 +2123,7 @@
 
 
     <script>
-            var subjectObject = {
+            var DepartmentObject = {
             "Front-end": {
                 "HTML": ["Links", "Images", "Tables", "Lists"],
                 "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
@@ -2135,28 +2135,28 @@
             }
             }
             window.onload = function() {
-            var subjectSel = document.getElementById("Department");
-            var topicSel = document.getElementById("Section");
-            var chapterSel = document.getElementById("Job");
-            for (var x in subjectObject) {
-                subjectSel.options[subjectSel.options.length] = new Option(x, x);
+            var DepartmentSel = document.getElementById("Department");
+            var SectionSel = document.getElementById("Section");
+            var JobSel = document.getElementById("Job");
+            for (var x in DepartmentObject) {
+                DepartmentSel.options[DepartmentSel.options.length] = new Option(x, x);
             }
-            subjectSel.onchange = function() {
-                //empty Chapters- and Topics- dropdowns
-                chapterSel.length = 1;
-                topicSel.length = 1;
+            DepartmentSel.onchange = function() {
+                //empty Jobs- and Sections- dropdowns
+                JobSel.length = 1;
+                SectionSel.length = 1;
                 //display correct values
-                for (var y in subjectObject[this.value]) {
-                topicSel.options[topicSel.options.length] = new Option(y, y);
+                for (var y in DepartmentObject[this.value]) {
+                SectionSel.options[SectionSel.options.length] = new Option(y, y);
                 }
             }
-            topicSel.onchange = function() {
-                //empty Chapters dropdown
-                chapterSel.length = 1;
+            SectionSel.onchange = function() {
+                //empty Jobs dropdown
+                JobSel.length = 1;
                 //display correct values
-                var z = subjectObject[subjectSel.value][this.value];
+                var z = DepartmentObject[DepartmentSel.value][this.value];
                 for (var i = 0; i < z.length; i++) {
-                chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                JobSel.options[JobSel.options.length] = new Option(z[i], z[i]);
                 }
             }
             }
