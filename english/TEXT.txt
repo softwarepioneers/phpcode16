@@ -373,3 +373,56 @@
                
                    
              </div>
+
+
+
+
+
+
+
+ <script>
+
+
+
+
+                      var DepartmentObject = {
+            "Front-end": {
+                "HTML": ["Links", "Images", "Tables", "Lists"],
+                "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+                "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
+            },
+            "Back-end": {
+                "PHP": ["Variables", "Strings", "Arrays"],
+                "SQL": ["SELECT", "UPDATE", "DELETE"]
+            }
+            }
+            window.onload = function() {
+            var DepartmentSel = document.getElementById("Department");
+            var SectionSel = document.getElementById("Section");
+            var JobSel = document.getElementById("Job");
+            for (var x in DepartmentObject) {
+                DepartmentSel.options[DepartmentSel.options.length] = new Option(x, x);
+            }
+            DepartmentSel.onchange = function() {
+                //empty Jobs- and Sections- dropdowns
+                JobSel.length = 1;
+                SectionSel.length = 1;
+                //display correct values
+                for (var y in DepartmentObject[this.value]) {
+                SectionSel.options[SectionSel.options.length] = new Option(y, y);
+                }
+            }
+            SectionSel.onchange = function() {
+                //empty Jobs dropdown
+                JobSel.length = 1;
+                //display correct values
+                var z = DepartmentObject[DepartmentSel.value][this.value];
+                for (var i = 0; i < z.length; i++) {
+                JobSel.options[JobSel.options.length] = new Option(z[i], z[i]);
+                }
+            }
+            }
+
+
+
+             </script>
