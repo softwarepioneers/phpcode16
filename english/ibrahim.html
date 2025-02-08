@@ -1262,23 +1262,15 @@
                                    
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT DEPARTMENT:</label>
-                                            <input type="text" name="StaffDepartment"   placeholder="Staff Department" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-                                            <!-- <select name="StaffDepartment" id="Department" placeholder="Staff Department" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Staff Department</option>
-                                            </select> -->
-                                           
+                                            <label>STUDENT PHONE:</label>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT SECTION:</label>
-                                            <input type="text" name="StaffSection"   placeholder="Staff Section" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
-                                            <!-- <select name="StaffSection" id="Section" placeholder="Staff Section" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Staff Section</option>
-                                            </select> -->
-                                            
+                                            <label>STUDENT MOBILE:</label>
+                                            <input type="text" autocomplete="on" name="StudentMobile" placeholder="Student Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
                                         </div>
                                     </div>
 
