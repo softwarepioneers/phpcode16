@@ -1085,45 +1085,19 @@
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT GRADE:</label>
-                                            <select name="StudentGrade" id="StudentGrade" placeholder="Student Grade" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Grade</option>
-                                                <option value="Grade 00">Grade 00</option>
-                                                <option value="Grade 01">Grade 01</option>
-                                                <option value="Grade 02">Grade 02</option>
-                                                <option value="Grade 03">Grade 03</option>
-                                                <option value="Grade 04">Grade 04</option>
-                                                <option value="Grade 05">Grade 05</option>
-                                                <option value="Grade 06">Grade 06</option>
-                                                <option value="Grade 07">Grade 07</option>
-                                                <option value="Grade 08">Grade 08</option>
-                                                <option value="Grade 09">Grade 09</option>
-                                                <option value="Grade 10">Grade 10</option>
-                                                <option value="Grade 11">Grade 11</option>
-                                                <option value="Grade 12">Grade 12</option>
-                                            </select>
-                                           
+                                            <input type="text" name="StudentGrade" readonly  placeholder="Student Grade" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT APPROVAL:</label>
-                                            <select name="StudentApproval" id="StudentApproval" placeholder="Student Approval" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Approval</option>
-                                                <option value="Approval">Approval</option>
-                                                <option value="Not Approval">Not Approval</option>
-                                            </select>
-                                            
+                                            <input type="text" name="StudentApproval" readonly  placeholder="Student Approval" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >                    
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group ">
                                             <label>STUDENT ACTIVATION:</label>
-                                            <select name="StudentActivation" id="StudentActivation" placeholder="Student Activation" value="" class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Activation</option>
-                                                <option value="Activation">Activation</option>
-                                                <option value="suspension">suspension</option>
-                                            </select>
-                                            
+                                            <input type="text" name="StudentActivation" readonly  placeholder="Student Activation" value="" class="form-control" onkeydown="return /[a-z, ]/i.test(event.key)" onblur="if (this.value == '') {this.value = '';}" onfocus="if (this.value == '') {this.value = '';}" required >
                                         </div>
                                     </div>
                                    
