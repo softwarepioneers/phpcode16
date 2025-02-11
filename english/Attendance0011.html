@@ -1259,18 +1259,26 @@
 
                                   <div class="row">
 
-                                   
+                                        
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT PHONE:</label>
-                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>STUDENT SCHOOL:</label>
+                                            <select name="StudentSchool" placeholder="Student School" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student School</option>
+                                                <option value="Salaama School">Salaama School</option>
+                                            </select>
                                         </div>
                                     </div>
-
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT MOBILE:</label>
-                                            <input type="text" autocomplete="on" name="StudentMobile" placeholder="Student Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                            <label>STUDENT STAGE:</label>
+                                            <select name="StudentStage" placeholder="Student Stage" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Stage</option>
+                                                <option value="Kg Stage">Kg Stage</option>
+                                                <option value="Primary Stage">Primary Stage</option>
+                                                <option value="Preparatory Stage">Preparatory Stage</option>
+                                                <option value="Secondary Stage">Secondary Stage</option>
+                                            </select>
                                         </div>
                                     </div>
 
@@ -1307,13 +1315,43 @@
                                                     <option value="Class X">Class X</option>
                                                     <option value="Class Y">Class Y</option>
                                                     <option value="Class Z">Class Z</option>
-                                           </select>
-                  
+                                        </select>
+                
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                  <div class="row">
+
+                                   
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT PHONE:</label>
+                                            <input type="text" name="StudentPhone" placeholder="Student Phone" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT MOBILE:</label>
+                                            <input type="text"  name="StudentMobile" placeholder="Student Mobile" value="" class="form-control" onkeypress="return /[0-9]/i.test(event.key)" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group ">
+                                            <label>STUDENT EMAIL:</label>
+                                            <input type="email"  name="StudentEmail" placeholder="Student Email" value="" class="form-control"  required>
                                         </div>
                                     </div>
 
                               </div>
       
+
+                                  
+
+
                                   <div class="row">
 
                                    
@@ -1353,16 +1391,16 @@
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGISTRATION DATE:</label>
-                                            <input  type="text"  name="StudentRegistrationDate" placeholder="Student Registration Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
+                                            <label>STUDENT ATTENDANCE DATE:</label>
+                                            <input  type="text"  name="StudentAttendanceDate" placeholder="Student Attendance Date" value="" class="form-control"  onblur="(this.type='text')" onfocus="(this.type='date')" required  > 
                                         </div>
                                     </div>
 
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGISTRATION STATUS:</label>
-                                            <select name="StudentRegistrationStatus" placeholder="Student Registration Status" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Registration Status</option>
+                                            <label>STUDENT ATTENDANCE STATUS:</label>
+                                            <select name="StudentAttendanceStatus" placeholder="Student Attendance Status" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Attendance Status</option>
                                                 <option value="Present">Present</option>
                                                 <option value="Absent">Absent</option>
                                             </select>
@@ -1372,9 +1410,9 @@
                                     
                                     <div class="col">
                                         <div class="form-group ">
-                                            <label>STUDENT REGISTRATION REMARK:</label>
-                                            <select name="StudentRegistrationRemark" placeholder="Student Registration Remark" value=""  class="form-control" required>
-                                                <option value="" selected="" disabled="" >Student Registration Remark</option>
+                                            <label>STUDENT ATTENDANCE REMARK:</label>
+                                            <select name="StudentAttendanceRemark" placeholder="Student Attendance Remark" value=""  class="form-control" required>
+                                                <option value="" selected="" disabled="" >Student Attendance Remark</option>
                                                 <option value="Normal">Normal</option>
                                                 <option value="Emergency">Emergency</option>
                                             </select>
@@ -1382,6 +1420,7 @@
                                     </div>
                                    
                                   </div>
+
 
                                    
                               
